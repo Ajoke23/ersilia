@@ -28,11 +28,7 @@ class Command(object):
     def close(self):
         m = importlib.import_module("ersilia.cli.commands.close")
         m.close_cmd()
-
-    def current(self):
-        m = importlib.import_module("ersilia.cli.commands.current")
-        m.current_cmd()
-
+  
     def delete(self):
         m = importlib.import_module("ersilia.cli.commands.delete")
         m.delete_cmd()
